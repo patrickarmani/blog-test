@@ -21,7 +21,7 @@ html, body {
     /* theme font-family */
     --Abel:'Abel', cursive; /*criei uma variável para a fonte usando -- */
     --Anton:'Anton', cursive;
-    --Josefine:'Josefine', cursive;
+    --Josefin:'Josefin', cursive;
     --Lexend:'Lexend', cursive;
     --Livvic:'Livvic', cursive;
 }
@@ -388,7 +388,7 @@ main .post-content .post-title a{
 
 
 .site-content .sidebar .newsletter{
-    padding-top: 3rem;
+    padding-top: 10rem;
 }
 
 .site-content .sidebar .newsletter .form-element{
@@ -410,6 +410,22 @@ main .post-content .post-title a{
     margin: 1rem 0;
     background: var(--sky);
 }
+
+.site-content .sidebar .popular-tags{
+    padding-top: 5rem 0;
+}
+
+
+.site-content .sidebar .popular-tags .tags .tag{
+    background: var(--sky);
+    padding-top: 4rem 1;
+    border-radius: 3rem;
+    margin: .4rem .6rem;
+}
+
+
+
+
 /*--------x---------Sidebar--------------x---------*/
 
 
@@ -418,7 +434,61 @@ main .post-content .post-title a{
 
 /*---------------x-------------Main Content-------------x---------------*/
 
+/*-----------------------------Footer----------------------------------*/
+footer.footer {
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
 
+footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color:var(--white);
+}
+
+footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: var(--white);
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: var(--sky);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .instagram div > img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+
+}
+
+
+
+
+/*---------------x--------------Footer-------------------x---------------*/
 
 /*      viewport  less then or equal to  750px     */
 @media only screen and (max-width: 750px) {
