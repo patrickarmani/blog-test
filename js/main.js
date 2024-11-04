@@ -1,3 +1,9 @@
+const responsive  ={
+  320: {
+    items: 1
+  }
+} ;
+
 $(document).ready(function(){
 
     $nav=$('.nav');
@@ -17,6 +23,7 @@ $(document).ready(function(){
         dots:false,
         nav:true,
         navText:[$('.owl-navigation .owl-nav-prev'),$('.owl-navigation .owl-nav-next')],
+        responsive: responsive
        
     });
 
