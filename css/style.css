@@ -581,7 +581,11 @@ footer.footer .move-up span:hover {
         text-align: center;
     }
 
+    nav .toggle-collapse{
+        width: 80% !important;        
+    }
 
+}
 
 
 
